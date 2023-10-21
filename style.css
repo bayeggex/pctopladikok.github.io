@@ -1,6 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+
+html{
+  scroll-behavior: smooth;
+}
+
 span{
   display: flex;
   justify-content: center;
@@ -35,18 +40,35 @@ p{
     font-weight: 700;
     text-align: center;
     position: relative; 
+    
 }
 .section2{
    background-color: white;
 }
-.center button {
+
+.center-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flip-card {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+
+.center .button {
   position: absolute;
   top: 50%;
   left: 45%;
   z-index: 4;
 }
 
-button {
+
+
+.button {
+  font-family: 'Montserrat', sans-serif;
   padding: 1.3em 3em;
   font-size: 12px;
   text-transform: uppercase;
@@ -63,14 +85,14 @@ button {
   margin-bottom: 20px;
 }
 
-button:hover {
+.button:hover {
   background-color: #23c483;
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
   transform: translateY(-7px);
 }
 
-button:active {
+.button:active {
   transform: translateY(-1px);
 }
 
@@ -302,4 +324,78 @@ button:active {
   font-size: 16px;
   font-weight: bold;
   text-align: center;
+}
+
+
+button#scrollToPcButton {
+  padding: 10px 20px;
+  background-color: #23c483;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#toPc {
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+#scrollToPcButton {
+  cursor: pointer;
+}
+
+#scrollToPcButton:hover {
+  background-color: #1e8c63;
+}
+
+#scrollToPcButton:active {
+  transform: translateY(2px);
+}
+
+.forFooter{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.top-bar {
+  background-color: white;
+  color: #fff;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 190px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.turkce {
+  background-image: url('image/turk.png');
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.ingilizce {
+  background-image: url('image/ingiliz.png');
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  font-family: 'Montserrat', sans-serif;
 }
